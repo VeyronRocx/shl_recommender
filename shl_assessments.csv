@@ -1,0 +1,16 @@
+name,url,remote_testing,adaptive_support,duration,test_type,description
+Verify Interactive - Java,https://www.shl.com/solutions/products/verify-interactive-java/,Yes,No,40,Technical,Assesses Java programming skills through interactive coding challenges that test practical implementation skills. Suitable for developers at all levels.
+Verify - Python,https://www.shl.com/solutions/products/verify-python/,Yes,No,35,Technical,Evaluates Python coding skills and programming concepts. Ideal for developers and data scientists.
+Verify - SQL,https://www.shl.com/solutions/products/verify-sql/,Yes,No,30,Technical,"Tests SQL query writing skills, database concepts, and data manipulation capabilities."
+Verify - JavaScript,https://www.shl.com/solutions/products/verify-javascript/,Yes,No,35,Technical,"Assesses JavaScript programming skills including DOM manipulation, async operations, and modern ES6+ concepts."
+Verify G+ Cognitive Ability,https://www.shl.com/solutions/products/verify-gplus/,Yes,Yes,25,Cognitive,Measures critical thinking and problem-solving skills with adaptive testing that adjusts difficulty based on performance.
+Occupational Personality Questionnaire (OPQ),https://www.shl.com/solutions/products/opq/,Yes,No,45,Personality,Comprehensive personality assessment measuring 32 dimensions of workplace behavior and preferences.
+SHL Behavioral Assessment,https://www.shl.com/solutions/products/behavioral-assessment/,Yes,No,20,Behavioral,Evaluates workplace behaviors and competencies through situational questions and scenarios.
+Situational Judgement Test,https://www.shl.com/solutions/products/situational-judgement/,Yes,No,30,Situational Judgement,Presents realistic workplace scenarios to evaluate decision-making and judgment in professional contexts.
+ADEPT-15 Personality Assessment,https://www.shl.com/solutions/products/adept15/,Yes,Yes,25,Personality,Adaptive personality assessment measuring 15 key workplace traits with high predictive validity.
+Verify Numerical Reasoning,https://www.shl.com/solutions/products/verify-numerical/,Yes,Yes,25,Cognitive,Tests ability to analyze and interpret numerical data and make sound decisions based on that analysis.
+Verify Verbal Reasoning,https://www.shl.com/solutions/products/verify-verbal/,Yes,Yes,20,Cognitive,Assesses ability to understand and evaluate written information to draw accurate conclusions.
+Remote Interview Solution,https://www.shl.com/solutions/products/remote-interview/,Yes,No,30,Behavioral,Structured video interview platform with AI-powered insights and standardized evaluation criteria.
+Leadership Assessment,https://www.shl.com/solutions/products/leadership-assessment/,Yes,No,60,Personality,"Comprehensive evaluation of leadership potential, styles, and competencies for selection and development."
+Verify Spatial Reasoning,https://www.shl.com/solutions/products/verify-spatial/,Yes,No,20,Cognitive,"Measures ability to visualize, manipulate and reason with 2D and 3D objects and patterns."
+Digital Skills Assessment,https://www.shl.com/solutions/products/digital-skills/,Yes,No,35,Technical,"Evaluates proficiency with digital tools, data literacy, and technology adaptation capabilities."
