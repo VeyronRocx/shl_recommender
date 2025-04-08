@@ -1,21 +1,20 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+from fastapi import FastAPI, Request, Query
+from fastapi.responses import JSONResponse
+from recommender import get_recommendations  # adjust this if needed
 
-\f0\fs24 \cf0 from fastapi import FastAPI, Request\
-from pydantic import BaseModel\
-from recommender import get_recommendations  # assumes same directory\
-import uvicorn\
-\
-app = FastAPI()\
-\
-class Query(BaseModel):\
-    query: str\
-\
-@app.post("/recommend")\
-async def recommend(query: Query):\
-    return get_recommendations(query.query)\
-}
+app = FastAPI()
+
+# Existing POST endpoint
+@app.post("/recommend")
+async def recommend(data: Request):
+    json_data = await data.json()
+    query = json_data.get("query")
+    recommendations = get_recommendations(query)
+    return JSONResponse(content={"input": query, "results": recommendations})
+
+
+# ✅ New GET endpoint
+@app.get("/search")
+async def search(query: str = Query(..., description="Search input text")):
+    recommendations = get_recommendations(query)
+    return JSONResponse(content={"input": query, "results": recommendations})
